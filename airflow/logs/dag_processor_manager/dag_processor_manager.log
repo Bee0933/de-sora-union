@@ -3040,3 +3040,146 @@ File Path                                        PID  Runtime      # DAGs    # E
 /opt/airflow/dags/etl_process_float_data.py     2399  1.03s             1           0  2.96s           2024-11-15T22:18:36
 /opt/airflow/dags/etl_process_clickup_data.py   2400  1.01s             1           0  2.90s           2024-11-15T22:18:36
 ================================================================================
+[2024-11-15T22:19:38.506+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_float_data.py     2409  0.05s             1           0  1.13s           2024-11-15T22:19:08
+/opt/airflow/dags/etl_process_clickup_data.py   2410  0.03s             1           0  1.11s           2024-11-15T22:19:08
+================================================================================
+[2024-11-15T22:20:08.584+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_float_data.py                             1           0  1.69s           2024-11-15T22:19:40
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  1.68s           2024-11-15T22:19:40
+================================================================================
+[2024-11-15T22:20:39.588+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_float_data.py                             1           0  2.30s           2024-11-15T22:20:12
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  2.23s           2024-11-15T22:20:12
+================================================================================
+[2024-11-15T22:21:09.871+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_float_data.py                             1           0  1.57s           2024-11-15T22:20:45
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  1.55s           2024-11-15T22:20:45
+================================================================================
+[2024-11-15T22:21:39.944+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  1.34s           2024-11-15T22:21:16
+/opt/airflow/dags/etl_process_float_data.py                             1           0  1.30s           2024-11-15T22:21:16
+================================================================================
+[2024-11-15T22:22:10.129+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_float_data.py                             1           0  2.77s           2024-11-15T22:21:49
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  2.69s           2024-11-15T22:21:49
+================================================================================
+[2024-11-15T22:22:40.880+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_float_data.py                             1           0  2.62s           2024-11-15T22:22:22
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  2.56s           2024-11-15T22:22:22
+================================================================================
+[2024-11-15T22:23:04.347+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-11-15T22:23:04.460+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2024-11-15T22:23:11.646+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_float_data.py                             1           0  2.19s           2024-11-15T22:22:55
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  1.99s           2024-11-15T22:22:55
+================================================================================
+[2024-11-15T22:23:42.242+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  1.26s           2024-11-15T22:23:27
+/opt/airflow/dags/etl_process_float_data.py                             1           0  1.25s           2024-11-15T22:23:27
+================================================================================
+[2024-11-15T22:24:12.880+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  4.45s           2024-11-15T22:24:01
+/opt/airflow/dags/etl_process_float_data.py                             1           0  4.38s           2024-11-15T22:24:01
+================================================================================
+[2024-11-15T22:24:43.388+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_float_data.py                             1           0  1.31s           2024-11-15T22:24:33
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  1.29s           2024-11-15T22:24:33
+================================================================================
+[2024-11-15T22:25:14.214+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  1.41s           2024-11-15T22:25:05
+/opt/airflow/dags/etl_process_float_data.py                             1           0  1.41s           2024-11-15T22:25:05
+================================================================================
+[2024-11-15T22:25:45.340+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_float_data.py                             1           0  1.22s           2024-11-15T22:25:37
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  1.20s           2024-11-15T22:25:37
+================================================================================
+[2024-11-15T22:25:59.240+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2024-11-15T22:28:52.156+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2024-11-15T22:28:52.167+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2024-11-15T22:28:52.172+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-11-15T22:28:52.174+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-11-15T22:28:52.246+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2024-11-15T22:28:53.417+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/etl_process_clickup_data.py     66  0.40s             0           0
+/opt/airflow/dags/etl_process_float_data.py       67  0.33s             0           0
+================================================================================
+[2024-11-15T22:29:23.889+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_process_float_data.py                             1           0  5.06s           2024-11-15T22:28:58
+/opt/airflow/dags/etl_process_clickup_data.py                           1           0  4.45s           2024-11-15T22:28:57
+================================================================================

@@ -55,8 +55,8 @@ def transform_data(**kwargs):
         df = df.drop_duplicates()
 
         logging.info("Transformed DataFrame:")
-        logging.info(df_transformed.head())
-        kwargs['ti'].xcom_push(key='transformed_data', value=df_transformed.to_dict())
+        logging.info(df.head())
+        kwargs['ti'].xcom_push(key='transformed_data', value=df.to_dict())
     except Exception as e:
         logging.error(f'An error occured: {e}')
 
