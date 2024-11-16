@@ -53,6 +53,8 @@ def transform_float_data(sheet_data):
         df["estimated_hours"] = df["estimated_hours"].fillna(0)
         for date_column in ["start_date", "end_date"]:
             df[date_column] = pd.to_datetime(df[date_column], errors="coerce")
+            df[date_column] = df[date_column].dt.strftime("%Y-%m-%dT%H:%M:%S")
+            
         df = df[df["end_date"] >= df["start_date"]]
         df["estimated_hours"] = (
             pd.to_numeric(df["estimated_hours"], errors="coerce").fillna(0).astype(int)
