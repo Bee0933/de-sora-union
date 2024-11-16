@@ -2693,3 +2693,31 @@ SyntaxError: expected 'except' or 'finally' block
 [2024-11-15T22:28:57.845+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:28:57.842+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-11-15T22:28:58.001+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:28:58.000+0000] {dag.py:3954} INFO - Setting next_dagrun for FLOAT_DATA_TO_PG to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
 [2024-11-15T22:28:58.083+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process_float_data.py took 4.970 seconds
+[2024-11-15T22:29:28.486+0000] {processor.py:161} INFO - Started process (PID=77) to work on /opt/airflow/dags/etl_process_float_data.py
+[2024-11-15T22:29:28.499+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_process_float_data.py for tasks to queue
+[2024-11-15T22:29:28.506+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:29:28.505+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_process_float_data.py
+[2024-11-15T22:29:31.703+0000] {processor.py:840} INFO - DAG(s) 'FLOAT_DATA_TO_PG' retrieved from /opt/airflow/dags/etl_process_float_data.py
+[2024-11-15T22:29:31.775+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:29:31.774+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-15T22:29:31.872+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:29:31.871+0000] {dag.py:3954} INFO - Setting next_dagrun for FLOAT_DATA_TO_PG to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-15T22:29:31.929+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process_float_data.py took 3.491 seconds
+[2024-11-15T22:30:02.764+0000] {processor.py:161} INFO - Started process (PID=86) to work on /opt/airflow/dags/etl_process_float_data.py
+[2024-11-15T22:30:02.769+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_process_float_data.py for tasks to queue
+[2024-11-15T22:30:02.780+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:30:02.779+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_process_float_data.py
+[2024-11-15T22:30:10.900+0000] {processor.py:840} INFO - DAG(s) 'FLOAT_DATA_TO_PG' retrieved from /opt/airflow/dags/etl_process_float_data.py
+[2024-11-15T22:30:11.323+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:30:11.322+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-15T22:30:11.580+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:30:11.580+0000] {dag.py:3954} INFO - Setting next_dagrun for FLOAT_DATA_TO_PG to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-15T22:30:11.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process_float_data.py took 8.974 seconds
+[2024-11-15T22:30:42.555+0000] {processor.py:161} INFO - Started process (PID=99) to work on /opt/airflow/dags/etl_process_float_data.py
+[2024-11-15T22:30:42.558+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_process_float_data.py for tasks to queue
+[2024-11-15T22:30:42.571+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:30:42.570+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_process_float_data.py
+[2024-11-15T22:30:48.000+0000] {processor.py:840} INFO - DAG(s) 'FLOAT_DATA_TO_PG' retrieved from /opt/airflow/dags/etl_process_float_data.py
+[2024-11-15T22:30:48.640+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:30:48.638+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-15T22:30:48.822+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:30:48.822+0000] {dag.py:3954} INFO - Setting next_dagrun for FLOAT_DATA_TO_PG to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-15T22:30:48.922+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process_float_data.py took 6.466 seconds
+[2024-11-15T22:31:20.319+0000] {processor.py:161} INFO - Started process (PID=110) to work on /opt/airflow/dags/etl_process_float_data.py
+[2024-11-15T22:31:20.323+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_process_float_data.py for tasks to queue
+[2024-11-15T22:31:20.330+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:31:20.329+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_process_float_data.py
+[2024-11-15T22:31:25.718+0000] {processor.py:840} INFO - DAG(s) 'FLOAT_DATA_TO_PG' retrieved from /opt/airflow/dags/etl_process_float_data.py
+[2024-11-15T22:31:25.957+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:31:25.954+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-15T22:31:26.312+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:31:26.311+0000] {dag.py:3954} INFO - Setting next_dagrun for FLOAT_DATA_TO_PG to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-15T22:31:26.688+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process_float_data.py took 6.396 seconds

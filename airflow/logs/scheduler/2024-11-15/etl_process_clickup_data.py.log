@@ -606,3 +606,31 @@ KeyError: 'Variable CLICKUP_DWH_TABLE_NAME does not exist'
 [2024-11-15T22:28:57.108+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:28:57.107+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-11-15T22:28:57.280+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:28:57.279+0000] {dag.py:3954} INFO - Setting next_dagrun for CLICKUP_DATA_TO_PG to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
 [2024-11-15T22:28:57.358+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process_clickup_data.py took 4.317 seconds
+[2024-11-15T22:29:28.097+0000] {processor.py:161} INFO - Started process (PID=75) to work on /opt/airflow/dags/etl_process_clickup_data.py
+[2024-11-15T22:29:28.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_process_clickup_data.py for tasks to queue
+[2024-11-15T22:29:28.127+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:29:28.125+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_process_clickup_data.py
+[2024-11-15T22:29:31.582+0000] {processor.py:840} INFO - DAG(s) 'CLICKUP_DATA_TO_PG' retrieved from /opt/airflow/dags/etl_process_clickup_data.py
+[2024-11-15T22:29:31.689+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:29:31.685+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-15T22:29:31.794+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:29:31.793+0000] {dag.py:3954} INFO - Setting next_dagrun for CLICKUP_DATA_TO_PG to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-15T22:29:31.873+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process_clickup_data.py took 3.817 seconds
+[2024-11-15T22:30:02.710+0000] {processor.py:161} INFO - Started process (PID=85) to work on /opt/airflow/dags/etl_process_clickup_data.py
+[2024-11-15T22:30:02.724+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_process_clickup_data.py for tasks to queue
+[2024-11-15T22:30:02.741+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:30:02.740+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_process_clickup_data.py
+[2024-11-15T22:30:12.348+0000] {processor.py:840} INFO - DAG(s) 'CLICKUP_DATA_TO_PG' retrieved from /opt/airflow/dags/etl_process_clickup_data.py
+[2024-11-15T22:30:12.465+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:30:12.464+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-15T22:30:12.664+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:30:12.663+0000] {dag.py:3954} INFO - Setting next_dagrun for CLICKUP_DATA_TO_PG to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-15T22:30:12.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process_clickup_data.py took 10.111 seconds
+[2024-11-15T22:30:43.565+0000] {processor.py:161} INFO - Started process (PID=101) to work on /opt/airflow/dags/etl_process_clickup_data.py
+[2024-11-15T22:30:43.568+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_process_clickup_data.py for tasks to queue
+[2024-11-15T22:30:43.592+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:30:43.591+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_process_clickup_data.py
+[2024-11-15T22:30:48.987+0000] {processor.py:840} INFO - DAG(s) 'CLICKUP_DATA_TO_PG' retrieved from /opt/airflow/dags/etl_process_clickup_data.py
+[2024-11-15T22:30:49.056+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:30:49.055+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-15T22:30:49.125+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:30:49.125+0000] {dag.py:3954} INFO - Setting next_dagrun for CLICKUP_DATA_TO_PG to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-15T22:30:49.180+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process_clickup_data.py took 5.649 seconds
+[2024-11-15T22:31:20.046+0000] {processor.py:161} INFO - Started process (PID=109) to work on /opt/airflow/dags/etl_process_clickup_data.py
+[2024-11-15T22:31:20.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_process_clickup_data.py for tasks to queue
+[2024-11-15T22:31:20.092+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:31:20.088+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/etl_process_clickup_data.py
+[2024-11-15T22:31:25.062+0000] {processor.py:840} INFO - DAG(s) 'CLICKUP_DATA_TO_PG' retrieved from /opt/airflow/dags/etl_process_clickup_data.py
+[2024-11-15T22:31:25.178+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:31:25.177+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-15T22:31:25.745+0000] {logging_mixin.py:188} INFO - [2024-11-15T22:31:25.742+0000] {dag.py:3954} INFO - Setting next_dagrun for CLICKUP_DATA_TO_PG to 2024-11-15 00:00:00+00:00, run_after=2024-11-16 00:00:00+00:00
+[2024-11-15T22:31:25.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_process_clickup_data.py took 5.878 seconds
