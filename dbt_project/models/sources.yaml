@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: float_clickup
+    schema: public
+    tables:
+      - name: float_cleaned
+        identifier: float_cleaned
+
+      - name: clickup_cleaned
+        identifier: clickup_cleaned
+       

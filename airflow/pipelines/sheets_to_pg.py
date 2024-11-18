@@ -53,7 +53,7 @@ def transform_float_data(sheet_data):
         df["estimated_hours"] = df["estimated_hours"].fillna(0)
         for date_column in ["start_date", "end_date"]:
             df[date_column] = pd.to_datetime(df[date_column], errors="coerce")
-            df[date_column] = df[date_column].dt.strftime("%Y-%m-%dT%H:%M:%S")
+            df[date_column] = df[date_column].dt.strftime("%Y-%m-%d")
             
         df = df[df["end_date"] >= df["start_date"]]
         df["estimated_hours"] = (
@@ -87,7 +87,7 @@ def transform_clickup_data(sheet_data):
                 df[col] = df[col].str.strip().str.title()
         if "date" in df.columns:
             df["date"] = pd.to_datetime(df["date"], errors="coerce")
-            df["date"] = df["date"].dt.strftime("%Y-%m-%dT%H:%M:%S")
+            df["date"] = df["date"].dt.strftime("%Y-%m-%d")
         if "hours" in df.columns:
             df["hours"] = pd.to_numeric(df["hours"], errors="coerce")
         if "billable" in df.columns:

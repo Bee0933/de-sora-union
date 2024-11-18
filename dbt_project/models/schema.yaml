@@ -1,0 +1,75 @@
+version: 2
+
+models:
+  # Clickup table generic tests 
+  - name: src_clickup  
+    description: "Table with project activity details."
+    columns:
+      - name: date
+        description: "The date when the activity occurred."
+        tests:
+          - not_null
+      - name: client
+        description: "The client associated with the activity."
+        tests:
+          - not_null
+      - name: project
+        description: "The project associated with the activity."
+        tests:
+          - not_null
+      - name: name
+        description: "The team member who performed the activity."
+        tests:
+          - not_null
+      - name: hours
+        description: "The number of hours logged for the activity."
+        tests:
+          - not_null
+      - name: billable
+        description: "Indicates if the activity is billable."
+        tests:
+          - not_null
+          - accepted_values:
+              values: [true, false]
+  
+  # Float table generic tests 
+  - name: src_float  
+    columns:
+      - name: client
+        description: "The client associated with the project."
+        tests:
+          - not_null
+
+      - name: project
+        description: "The project name."
+        tests:
+          - not_null
+
+      - name: role
+        description: "The role assigned to the team member."
+        tests:
+          - not_null
+        
+      - name: name
+        description: "The team member's name."
+        tests:
+          - not_null
+
+      - name: start_date
+        description: "The start date of the activity."
+        tests:
+          - not_null
+          # - dbt_utils.expression_is_true:
+          #     expression: "src_float.start_date <= src_float.end_date"
+
+      - name: end_date
+        description: "The end date of the activity."
+        tests:
+          - not_null
+
+      - name: estimated_hours
+        description: "The total estimated hours for the task."
+        tests:
+          - not_null
+          # - dbt_utils.expression_is_true:
+          #     expression: "src_float.estimated_hours >= 0"

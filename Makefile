@@ -9,3 +9,6 @@ dbt-build:
 
 dbt-compile:
 	docker compose run dbt compile
+
+dbt-deps:
+	docker compose run dbt deps
