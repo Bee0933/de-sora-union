@@ -2,4 +2,3 @@ postgres/
 __pycache__
 venv
 airflow/logs
-spark
