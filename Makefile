@@ -36,4 +36,17 @@ dbt-deps:
 
 spark-job:
 	# submit spark job to spark cluster via the master url
-	docker exec -it dev-spark-master-1 spark-submit --master spark://172.18.0.2:7077 spark/jobs/spark_analysis.py
+	docker exec -it sora-spark-master-1 spark-submit --master spark://172.18.0.2:7077 jobs/spark_analysis.py
+
+help:
+	@echo "Available targets:"
+	@echo "  up-etl          - Start ETL containers (Postgres & DBT)"
+	@echo "  up-airflow      - Start Airflow containers"
+	@echo "  up-spark        - Start Spark containers (cluster)"
+	@echo "  down-etl        - Stop ETL containers (Postgres & DBT)"
+	@echo "  down-airflow    - Stop Airflow containers"
+	@echo "  down-spark      - Stop Spark containers"
+	@echo "  dbt-build       - Build DBT models on the database"
+	@echo "  dbt-compile     - Compile DBT models to check for errors"
+	@echo "  dbt-deps        - Install dependencies required by DBT"
+	@echo "  spark-job       - Submit Spark job to Spark cluster via master URL"
