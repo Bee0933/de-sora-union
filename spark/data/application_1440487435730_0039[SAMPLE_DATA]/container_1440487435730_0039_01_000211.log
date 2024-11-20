@@ -1,0 +1,472 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/hdfs/nodemanager/usercache/yxsu/filecache/20/spark-assembly-1.4.1-hadoop2.6.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/local/hadoop/share/hadoop/common/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+15/09/01 18:14:44 INFO executor.CoarseGrainedExecutorBackend: Registered signal handlers for [TERM, HUP, INT]
+15/09/01 18:14:45 INFO spark.SecurityManager: Changing view acls to: yarn,yxsu
+15/09/01 18:14:45 INFO spark.SecurityManager: Changing modify acls to: yarn,yxsu
+15/09/01 18:14:45 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(yarn, yxsu); users with modify permissions: Set(yarn, yxsu)
+15/09/01 18:14:46 INFO slf4j.Slf4jLogger: Slf4jLogger started
+15/09/01 18:14:46 INFO Remoting: Starting remoting
+15/09/01 18:14:46 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://driverPropsFetcher@mesos-slave-30:57434]
+15/09/01 18:14:46 INFO util.Utils: Successfully started service 'driverPropsFetcher' on port 57434.
+15/09/01 18:14:46 INFO spark.SecurityManager: Changing view acls to: yarn,yxsu
+15/09/01 18:14:46 INFO spark.SecurityManager: Changing modify acls to: yarn,yxsu
+15/09/01 18:14:46 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(yarn, yxsu); users with modify permissions: Set(yarn, yxsu)
+15/09/01 18:14:46 INFO remote.RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+15/09/01 18:14:46 INFO remote.RemoteActorRefProvider$RemotingTerminator: Remote daemon shut down; proceeding with flushing remote transports.
+15/09/01 18:14:46 INFO remote.RemoteActorRefProvider$RemotingTerminator: Remoting shut down.
+15/09/01 18:14:46 INFO slf4j.Slf4jLogger: Slf4jLogger started
+15/09/01 18:14:46 INFO Remoting: Starting remoting
+15/09/01 18:14:46 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkExecutor@mesos-slave-30:55832]
+15/09/01 18:14:46 INFO util.Utils: Successfully started service 'sparkExecutor' on port 55832.
+15/09/01 18:14:46 INFO storage.DiskBlockManager: Created local directory at /opt/hdfs/nodemanager/usercache/yxsu/appcache/application_1440487435730_0039/blockmgr-4bb75d56-f44c-45ed-aa60-3019bc2ec097
+15/09/01 18:14:46 INFO storage.MemoryStore: MemoryStore started with capacity 530.3 MB
+15/09/01 18:14:47 INFO executor.CoarseGrainedExecutorBackend: Connecting to driver: akka.tcp://sparkDriver@10.10.18.32:65488/user/CoarseGrainedScheduler
+15/09/01 18:14:47 INFO executor.CoarseGrainedExecutorBackend: Successfully registered with driver
+15/09/01 18:14:47 INFO executor.Executor: Starting executor ID 210 on host mesos-slave-30
+15/09/01 18:14:47 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 58251.
+15/09/01 18:14:47 INFO netty.NettyBlockTransferService: Server created on 58251
+15/09/01 18:14:47 INFO storage.BlockManagerMaster: Trying to register BlockManager
+15/09/01 18:14:47 INFO storage.BlockManagerMaster: Registered BlockManager
+15/09/01 18:14:47 INFO executor.Executor: Using REPL class URI: http://10.10.18.32:65475
+15/09/01 18:16:43 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 207
+15/09/01 18:16:43 INFO executor.Executor: Running task 218.0 in stage 0.0 (TID 207)
+15/09/01 18:16:43 INFO broadcast.TorrentBroadcast: Started reading broadcast variable 1
+15/09/01 18:16:43 INFO storage.MemoryStore: ensureFreeSpace(1097) called with curMem=0, maxMem=556038881
+15/09/01 18:16:43 INFO storage.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 1097.0 B, free 530.3 MB)
+15/09/01 18:16:43 INFO broadcast.TorrentBroadcast: Reading broadcast variable 1 took 490 ms
+15/09/01 18:16:43 INFO storage.MemoryStore: ensureFreeSpace(1776) called with curMem=1097, maxMem=556038881
+15/09/01 18:16:43 INFO storage.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 1776.0 B, free 530.3 MB)
+15/09/01 18:16:43 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00000397.JPEG:0+185178
+15/09/01 18:16:43 INFO broadcast.TorrentBroadcast: Started reading broadcast variable 0
+15/09/01 18:16:44 INFO storage.MemoryStore: ensureFreeSpace(20110) called with curMem=2873, maxMem=556038881
+15/09/01 18:16:44 INFO storage.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 19.6 KB, free 530.3 MB)
+15/09/01 18:16:44 INFO broadcast.TorrentBroadcast: Reading broadcast variable 0 took 205 ms
+15/09/01 18:16:44 INFO storage.MemoryStore: ensureFreeSpace(338816) called with curMem=22983, maxMem=556038881
+15/09/01 18:16:44 INFO storage.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 330.9 KB, free 529.9 MB)
+15/09/01 18:16:44 INFO executor.Executor: Finished task 218.0 in stage 0.0 (TID 207). 1835 bytes result sent to driver
+15/09/01 18:16:44 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 748
+15/09/01 18:16:44 INFO executor.Executor: Running task 750.0 in stage 0.0 (TID 748)
+15/09/01 18:16:44 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00001236.JPEG:0+82600,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00001241.JPEG:0+81396
+15/09/01 18:16:44 INFO executor.Executor: Finished task 750.0 in stage 0.0 (TID 748). 1835 bytes result sent to driver
+15/09/01 18:16:45 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1107
+15/09/01 18:16:45 INFO executor.Executor: Running task 1338.0 in stage 0.0 (TID 1107)
+15/09/01 18:16:45 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00002197.JPEG:0+125133,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00002203.JPEG:0+164831
+15/09/01 18:16:45 INFO executor.Executor: Finished task 1338.0 in stage 0.0 (TID 1107). 1835 bytes result sent to driver
+15/09/01 18:16:45 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1465
+15/09/01 18:16:45 INFO executor.Executor: Running task 1926.0 in stage 0.0 (TID 1465)
+15/09/01 18:16:45 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00003203.JPEG:0+124020,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00003226.JPEG:0+131961
+15/09/01 18:16:45 INFO executor.Executor: Finished task 1926.0 in stage 0.0 (TID 1465). 1835 bytes result sent to driver
+15/09/01 18:16:45 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 1987
+15/09/01 18:16:45 INFO executor.Executor: Running task 2486.0 in stage 0.0 (TID 1987)
+15/09/01 18:16:45 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00004052.JPEG:0+263776
+15/09/01 18:16:45 INFO executor.Executor: Finished task 2486.0 in stage 0.0 (TID 1987). 1835 bytes result sent to driver
+15/09/01 18:16:46 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 2524
+15/09/01 18:16:46 INFO executor.Executor: Running task 3074.0 in stage 0.0 (TID 2524)
+15/09/01 18:16:46 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00004992.JPEG:0+108043,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00005012.JPEG:0+78158
+15/09/01 18:16:46 INFO executor.Executor: Finished task 3074.0 in stage 0.0 (TID 2524). 1835 bytes result sent to driver
+15/09/01 18:16:46 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 3082
+15/09/01 18:16:46 INFO executor.Executor: Running task 3634.0 in stage 0.0 (TID 3082)
+15/09/01 18:16:46 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00005935.JPEG:0+165520
+15/09/01 18:16:46 INFO executor.Executor: Finished task 3634.0 in stage 0.0 (TID 3082). 1835 bytes result sent to driver
+15/09/01 18:16:47 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 3599
+15/09/01 18:16:47 INFO executor.Executor: Running task 4222.0 in stage 0.0 (TID 3599)
+15/09/01 18:16:47 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00006938.JPEG:0+3590,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00006948.JPEG:0+137788
+15/09/01 18:16:47 INFO executor.Executor: Finished task 4222.0 in stage 0.0 (TID 3599). 1835 bytes result sent to driver
+15/09/01 18:16:47 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 4152
+15/09/01 18:16:47 INFO executor.Executor: Running task 4866.0 in stage 0.0 (TID 4152)
+15/09/01 18:16:47 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00008025.JPEG:0+29809,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00008034.JPEG:0+87556,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00008039.JPEG:0+133183
+15/09/01 18:16:47 INFO executor.Executor: Finished task 4866.0 in stage 0.0 (TID 4152). 1835 bytes result sent to driver
+15/09/01 18:16:47 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 4719
+15/09/01 18:16:47 INFO executor.Executor: Running task 5454.0 in stage 0.0 (TID 4719)
+15/09/01 18:16:47 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00008957.JPEG:0+105099,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00008982.JPEG:0+156860
+15/09/01 18:16:47 INFO executor.Executor: Finished task 5454.0 in stage 0.0 (TID 4719). 1835 bytes result sent to driver
+15/09/01 18:16:48 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 5288
+15/09/01 18:16:48 INFO executor.Executor: Running task 6042.0 in stage 0.0 (TID 5288)
+15/09/01 18:16:48 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00009930.JPEG:0+131456,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00009939.JPEG:0+148079
+15/09/01 18:16:48 INFO executor.Executor: Finished task 6042.0 in stage 0.0 (TID 5288). 1835 bytes result sent to driver
+15/09/01 18:16:48 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 5843
+15/09/01 18:16:48 INFO executor.Executor: Running task 6630.0 in stage 0.0 (TID 5843)
+15/09/01 18:16:48 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00010922.JPEG:0+111495,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00010937.JPEG:0+106737
+15/09/01 18:16:48 INFO executor.Executor: Finished task 6630.0 in stage 0.0 (TID 5843). 1835 bytes result sent to driver
+15/09/01 18:16:49 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 6409
+15/09/01 18:16:49 INFO executor.Executor: Running task 7218.0 in stage 0.0 (TID 6409)
+15/09/01 18:16:49 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00011865.JPEG:0+133384,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00011867.JPEG:0+142908
+15/09/01 18:16:49 INFO executor.Executor: Finished task 7218.0 in stage 0.0 (TID 6409). 1835 bytes result sent to driver
+15/09/01 18:16:49 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 6971
+15/09/01 18:16:49 INFO executor.Executor: Running task 7778.0 in stage 0.0 (TID 6971)
+15/09/01 18:16:49 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00012783.JPEG:0+86766,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00012791.JPEG:0+133976
+15/09/01 18:16:49 INFO executor.Executor: Finished task 7778.0 in stage 0.0 (TID 6971). 1835 bytes result sent to driver
+15/09/01 18:16:50 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 7529
+15/09/01 18:16:50 INFO executor.Executor: Running task 8366.0 in stage 0.0 (TID 7529)
+15/09/01 18:16:50 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00013730.JPEG:0+182480
+15/09/01 18:16:50 INFO executor.Executor: Finished task 8366.0 in stage 0.0 (TID 7529). 1835 bytes result sent to driver
+15/09/01 18:16:50 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 8092
+15/09/01 18:16:50 INFO executor.Executor: Running task 8954.0 in stage 0.0 (TID 8092)
+15/09/01 18:16:50 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00014741.JPEG:0+115362,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00014743.JPEG:0+108276
+15/09/01 18:16:50 INFO executor.Executor: Finished task 8954.0 in stage 0.0 (TID 8092). 1835 bytes result sent to driver
+15/09/01 18:16:51 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 8650
+15/09/01 18:16:51 INFO executor.Executor: Running task 9542.0 in stage 0.0 (TID 8650)
+15/09/01 18:16:51 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00015695.JPEG:0+184633
+15/09/01 18:16:51 INFO executor.Executor: Finished task 9542.0 in stage 0.0 (TID 8650). 1835 bytes result sent to driver
+15/09/01 18:16:51 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 9218
+15/09/01 18:16:51 INFO executor.Executor: Running task 10102.0 in stage 0.0 (TID 9218)
+15/09/01 18:16:51 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00016554.JPEG:0+111814,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00016567.JPEG:0+100699
+15/09/01 18:16:51 INFO executor.Executor: Finished task 10102.0 in stage 0.0 (TID 9218). 1835 bytes result sent to driver
+15/09/01 18:16:52 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 9782
+15/09/01 18:16:52 INFO executor.Executor: Running task 10690.0 in stage 0.0 (TID 9782)
+15/09/01 18:16:52 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00017509.JPEG:0+125242,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00017526.JPEG:0+118575
+15/09/01 18:16:52 INFO executor.Executor: Finished task 10690.0 in stage 0.0 (TID 9782). 1835 bytes result sent to driver
+15/09/01 18:16:52 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 10355
+15/09/01 18:16:52 INFO executor.Executor: Running task 11278.0 in stage 0.0 (TID 10355)
+15/09/01 18:16:52 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00018455.JPEG:0+119258,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00018475.JPEG:0+169100
+15/09/01 18:16:52 INFO executor.Executor: Finished task 11278.0 in stage 0.0 (TID 10355). 1835 bytes result sent to driver
+15/09/01 18:16:52 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 10939
+15/09/01 18:16:52 INFO executor.Executor: Running task 11866.0 in stage 0.0 (TID 10939)
+15/09/01 18:16:52 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00019414.JPEG:0+27674,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00019416.JPEG:0+136552
+15/09/01 18:16:52 INFO executor.Executor: Finished task 11866.0 in stage 0.0 (TID 10939). 1835 bytes result sent to driver
+15/09/01 18:16:53 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 11515
+15/09/01 18:16:53 INFO executor.Executor: Running task 12482.0 in stage 0.0 (TID 11515)
+15/09/01 18:16:53 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00020447.JPEG:0+98305,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00020470.JPEG:0+122897
+15/09/01 18:16:53 INFO executor.Executor: Finished task 12482.0 in stage 0.0 (TID 11515). 1835 bytes result sent to driver
+15/09/01 18:16:53 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 12077
+15/09/01 18:16:53 INFO executor.Executor: Running task 13042.0 in stage 0.0 (TID 12077)
+15/09/01 18:16:53 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00021345.JPEG:0+109249,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00021352.JPEG:0+313454
+15/09/01 18:16:53 INFO executor.Executor: Finished task 13042.0 in stage 0.0 (TID 12077). 1835 bytes result sent to driver
+15/09/01 18:16:54 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 12636
+15/09/01 18:16:54 INFO executor.Executor: Running task 13630.0 in stage 0.0 (TID 12636)
+15/09/01 18:16:54 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00022310.JPEG:0+117587,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00022328.JPEG:0+157491
+15/09/01 18:16:54 INFO executor.Executor: Finished task 13630.0 in stage 0.0 (TID 12636). 1835 bytes result sent to driver
+15/09/01 18:16:54 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 13205
+15/09/01 18:16:54 INFO executor.Executor: Running task 14246.0 in stage 0.0 (TID 13205)
+15/09/01 18:16:54 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00023352.JPEG:0+120829,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00023354.JPEG:0+135449
+15/09/01 18:16:54 INFO executor.Executor: Finished task 14246.0 in stage 0.0 (TID 13205). 1835 bytes result sent to driver
+15/09/01 18:16:55 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 13760
+15/09/01 18:16:55 INFO executor.Executor: Running task 14834.0 in stage 0.0 (TID 13760)
+15/09/01 18:16:55 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00024255.JPEG:0+134194,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00024256.JPEG:0+116532
+15/09/01 18:16:55 INFO executor.Executor: Finished task 14834.0 in stage 0.0 (TID 13760). 1835 bytes result sent to driver
+15/09/01 18:16:55 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 14319
+15/09/01 18:16:55 INFO executor.Executor: Running task 15422.0 in stage 0.0 (TID 14319)
+15/09/01 18:16:55 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00025261.JPEG:0+180508
+15/09/01 18:16:55 INFO executor.Executor: Finished task 15422.0 in stage 0.0 (TID 14319). 1835 bytes result sent to driver
+15/09/01 18:16:56 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 14874
+15/09/01 18:16:56 INFO executor.Executor: Running task 15954.0 in stage 0.0 (TID 14874)
+15/09/01 18:16:56 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00026158.JPEG:0+316828
+15/09/01 18:16:56 INFO executor.Executor: Finished task 15954.0 in stage 0.0 (TID 14874). 1835 bytes result sent to driver
+15/09/01 18:16:56 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 15433
+15/09/01 18:16:56 INFO executor.Executor: Running task 16542.0 in stage 0.0 (TID 15433)
+15/09/01 18:16:56 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00027060.JPEG:0+174388
+15/09/01 18:16:56 INFO executor.Executor: Finished task 16542.0 in stage 0.0 (TID 15433). 1835 bytes result sent to driver
+15/09/01 18:16:56 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 15993
+15/09/01 18:16:56 INFO executor.Executor: Running task 17130.0 in stage 0.0 (TID 15993)
+15/09/01 18:16:56 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00028072.JPEG:0+121893,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00028073.JPEG:0+47831
+15/09/01 18:16:56 INFO executor.Executor: Finished task 17130.0 in stage 0.0 (TID 15993). 1835 bytes result sent to driver
+15/09/01 18:16:57 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 16558
+15/09/01 18:16:57 INFO executor.Executor: Running task 17718.0 in stage 0.0 (TID 16558)
+15/09/01 18:16:57 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00028967.JPEG:0+75975,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00028992.JPEG:0+4331,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00028997.JPEG:0+13975,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00029013.JPEG:0+120279
+15/09/01 18:16:57 INFO executor.Executor: Finished task 17718.0 in stage 0.0 (TID 16558). 1835 bytes result sent to driver
+15/09/01 18:16:57 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 17132
+15/09/01 18:16:57 INFO executor.Executor: Running task 18334.0 in stage 0.0 (TID 17132)
+15/09/01 18:16:57 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00029974.JPEG:0+118531,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00029985.JPEG:0+143377
+15/09/01 18:16:57 INFO executor.Executor: Finished task 18334.0 in stage 0.0 (TID 17132). 1835 bytes result sent to driver
+15/09/01 18:16:58 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 17694
+15/09/01 18:16:58 INFO executor.Executor: Running task 18922.0 in stage 0.0 (TID 17694)
+15/09/01 18:16:58 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00030956.JPEG:0+122668,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00030960.JPEG:0+190451
+15/09/01 18:16:58 INFO executor.Executor: Finished task 18922.0 in stage 0.0 (TID 17694). 1835 bytes result sent to driver
+15/09/01 18:16:58 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 18280
+15/09/01 18:16:58 INFO executor.Executor: Running task 19510.0 in stage 0.0 (TID 18280)
+15/09/01 18:16:58 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00031899.JPEG:0+132942,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00031900.JPEG:0+178844
+15/09/01 18:16:58 INFO executor.Executor: Finished task 19510.0 in stage 0.0 (TID 18280). 1835 bytes result sent to driver
+15/09/01 18:16:59 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 18852
+15/09/01 18:16:59 INFO executor.Executor: Running task 20098.0 in stage 0.0 (TID 18852)
+15/09/01 18:16:59 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00032903.JPEG:0+172632
+15/09/01 18:16:59 INFO executor.Executor: Finished task 20098.0 in stage 0.0 (TID 18852). 1835 bytes result sent to driver
+15/09/01 18:16:59 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 19409
+15/09/01 18:16:59 INFO executor.Executor: Running task 20658.0 in stage 0.0 (TID 19409)
+15/09/01 18:16:59 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00033761.JPEG:0+108470,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00033804.JPEG:0+176152
+15/09/01 18:16:59 INFO executor.Executor: Finished task 20658.0 in stage 0.0 (TID 19409). 1835 bytes result sent to driver
+15/09/01 18:17:00 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 19974
+15/09/01 18:17:00 INFO executor.Executor: Running task 21246.0 in stage 0.0 (TID 19974)
+15/09/01 18:17:00 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00034771.JPEG:0+25106,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00034776.JPEG:0+38274,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00034779.JPEG:0+199415
+15/09/01 18:17:00 INFO executor.Executor: Finished task 21246.0 in stage 0.0 (TID 19974). 1835 bytes result sent to driver
+15/09/01 18:17:00 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 20552
+15/09/01 18:17:00 INFO executor.Executor: Running task 21834.0 in stage 0.0 (TID 20552)
+15/09/01 18:17:00 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00035676.JPEG:0+137871
+15/09/01 18:17:00 INFO executor.Executor: Finished task 21834.0 in stage 0.0 (TID 20552). 1835 bytes result sent to driver
+15/09/01 18:17:01 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 21124
+15/09/01 18:17:01 INFO executor.Executor: Running task 22422.0 in stage 0.0 (TID 21124)
+15/09/01 18:17:01 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00036645.JPEG:0+139343
+15/09/01 18:17:01 INFO executor.Executor: Finished task 22422.0 in stage 0.0 (TID 21124). 1835 bytes result sent to driver
+15/09/01 18:17:01 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 21691
+15/09/01 18:17:01 INFO executor.Executor: Running task 23010.0 in stage 0.0 (TID 21691)
+15/09/01 18:17:01 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00037571.JPEG:0+90989,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00037581.JPEG:0+77381
+15/09/01 18:17:01 INFO executor.Executor: Finished task 23010.0 in stage 0.0 (TID 21691). 1835 bytes result sent to driver
+15/09/01 18:17:01 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 22265
+15/09/01 18:17:01 INFO executor.Executor: Running task 23626.0 in stage 0.0 (TID 22265)
+15/09/01 18:17:02 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00038601.JPEG:0+143649
+15/09/01 18:17:02 INFO executor.Executor: Finished task 23626.0 in stage 0.0 (TID 22265). 1835 bytes result sent to driver
+15/09/01 18:17:02 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 22827
+15/09/01 18:17:02 INFO executor.Executor: Running task 24158.0 in stage 0.0 (TID 22827)
+15/09/01 18:17:02 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00039469.JPEG:0+103280,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00039488.JPEG:0+33359
+15/09/01 18:17:02 INFO executor.Executor: Finished task 24158.0 in stage 0.0 (TID 22827). 1835 bytes result sent to driver
+15/09/01 18:17:02 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 23390
+15/09/01 18:17:02 INFO executor.Executor: Running task 24746.0 in stage 0.0 (TID 23390)
+15/09/01 18:17:02 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00040430.JPEG:0+104441,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00040455.JPEG:0+190410
+15/09/01 18:17:02 INFO executor.Executor: Finished task 24746.0 in stage 0.0 (TID 23390). 1835 bytes result sent to driver
+15/09/01 18:17:03 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 23963
+15/09/01 18:17:03 INFO executor.Executor: Running task 25334.0 in stage 0.0 (TID 23963)
+15/09/01 18:17:03 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00041393.JPEG:0+188803
+15/09/01 18:17:03 INFO executor.Executor: Finished task 25334.0 in stage 0.0 (TID 23963). 1835 bytes result sent to driver
+15/09/01 18:17:03 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 24528
+15/09/01 18:17:03 INFO executor.Executor: Running task 25922.0 in stage 0.0 (TID 24528)
+15/09/01 18:17:03 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00042371.JPEG:0+107908,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00042405.JPEG:0+61909
+15/09/01 18:17:03 INFO executor.Executor: Finished task 25922.0 in stage 0.0 (TID 24528). 1835 bytes result sent to driver
+15/09/01 18:17:04 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 25109
+15/09/01 18:17:04 INFO executor.Executor: Running task 26510.0 in stage 0.0 (TID 25109)
+15/09/01 18:17:04 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00043329.JPEG:0+196347
+15/09/01 18:17:04 INFO executor.Executor: Finished task 26510.0 in stage 0.0 (TID 25109). 1835 bytes result sent to driver
+15/09/01 18:17:04 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 25673
+15/09/01 18:17:04 INFO executor.Executor: Running task 27098.0 in stage 0.0 (TID 25673)
+15/09/01 18:17:04 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00044324.JPEG:0+58525,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00044332.JPEG:0+100452
+15/09/01 18:17:04 INFO executor.Executor: Finished task 27098.0 in stage 0.0 (TID 25673). 1835 bytes result sent to driver
+15/09/01 18:17:05 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 26239
+15/09/01 18:17:05 INFO executor.Executor: Running task 27686.0 in stage 0.0 (TID 26239)
+15/09/01 18:17:05 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00045262.JPEG:0+143858
+15/09/01 18:17:05 INFO executor.Executor: Finished task 27686.0 in stage 0.0 (TID 26239). 1835 bytes result sent to driver
+15/09/01 18:17:05 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 26796
+15/09/01 18:17:05 INFO executor.Executor: Running task 28246.0 in stage 0.0 (TID 26796)
+15/09/01 18:17:05 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00046196.JPEG:0+149877
+15/09/01 18:17:05 INFO executor.Executor: Finished task 28246.0 in stage 0.0 (TID 26796). 1835 bytes result sent to driver
+15/09/01 18:17:06 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 27360
+15/09/01 18:17:06 INFO executor.Executor: Running task 28834.0 in stage 0.0 (TID 27360)
+15/09/01 18:17:06 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00047123.JPEG:0+61373,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00047133.JPEG:0+165003
+15/09/01 18:17:06 INFO executor.Executor: Finished task 28834.0 in stage 0.0 (TID 27360). 1835 bytes result sent to driver
+15/09/01 18:17:06 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 27928
+15/09/01 18:17:06 INFO executor.Executor: Running task 29422.0 in stage 0.0 (TID 27928)
+15/09/01 18:17:06 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00048081.JPEG:0+135526,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00048253.JPEG:0+30186
+15/09/01 18:17:06 INFO executor.Executor: Finished task 29422.0 in stage 0.0 (TID 27928). 1835 bytes result sent to driver
+15/09/01 18:17:07 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 28493
+15/09/01 18:17:07 INFO executor.Executor: Running task 30010.0 in stage 0.0 (TID 28493)
+15/09/01 18:17:07 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00049057.JPEG:0+145307
+15/09/01 18:17:07 INFO executor.Executor: Finished task 30010.0 in stage 0.0 (TID 28493). 1835 bytes result sent to driver
+15/09/01 18:17:07 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 29059
+15/09/01 18:17:07 INFO executor.Executor: Running task 30570.0 in stage 0.0 (TID 29059)
+15/09/01 18:17:07 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00049943.JPEG:0+109509,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00049962.JPEG:0+85240
+15/09/01 18:17:07 INFO executor.Executor: Finished task 30570.0 in stage 0.0 (TID 29059). 1835 bytes result sent to driver
+15/09/01 18:17:08 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 29626
+15/09/01 18:17:08 INFO executor.Executor: Running task 31158.0 in stage 0.0 (TID 29626)
+15/09/01 18:17:08 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00050869.JPEG:0+135375,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00050886.JPEG:0+141684
+15/09/01 18:17:08 INFO executor.Executor: Finished task 31158.0 in stage 0.0 (TID 29626). 1835 bytes result sent to driver
+15/09/01 18:17:08 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 30215
+15/09/01 18:17:08 INFO executor.Executor: Running task 31746.0 in stage 0.0 (TID 30215)
+15/09/01 18:17:08 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00051835.JPEG:0+218677
+15/09/01 18:17:08 INFO executor.Executor: Finished task 31746.0 in stage 0.0 (TID 30215). 1835 bytes result sent to driver
+15/09/01 18:17:09 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 30772
+15/09/01 18:17:09 INFO executor.Executor: Running task 32334.0 in stage 0.0 (TID 30772)
+15/09/01 18:17:09 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00052795.JPEG:0+168693
+15/09/01 18:17:09 INFO executor.Executor: Finished task 32334.0 in stage 0.0 (TID 30772). 1835 bytes result sent to driver
+15/09/01 18:17:09 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 31332
+15/09/01 18:17:09 INFO executor.Executor: Running task 32894.0 in stage 0.0 (TID 31332)
+15/09/01 18:17:09 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00053728.JPEG:0+191162
+15/09/01 18:17:09 INFO executor.Executor: Finished task 32894.0 in stage 0.0 (TID 31332). 1835 bytes result sent to driver
+15/09/01 18:17:10 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 31895
+15/09/01 18:17:10 INFO executor.Executor: Running task 33482.0 in stage 0.0 (TID 31895)
+15/09/01 18:17:10 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00054710.JPEG:0+90262,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00054720.JPEG:0+94706
+15/09/01 18:17:10 INFO executor.Executor: Finished task 33482.0 in stage 0.0 (TID 31895). 1835 bytes result sent to driver
+15/09/01 18:17:10 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 32469
+15/09/01 18:17:10 INFO executor.Executor: Running task 34070.0 in stage 0.0 (TID 32469)
+15/09/01 18:17:10 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00055668.JPEG:0+122919,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00055678.JPEG:0+130548
+15/09/01 18:17:10 INFO executor.Executor: Finished task 34070.0 in stage 0.0 (TID 32469). 1835 bytes result sent to driver
+15/09/01 18:17:11 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 33047
+15/09/01 18:17:11 INFO executor.Executor: Running task 34658.0 in stage 0.0 (TID 33047)
+15/09/01 18:17:11 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00056659.JPEG:0+189667
+15/09/01 18:17:11 INFO executor.Executor: Finished task 34658.0 in stage 0.0 (TID 33047). 1835 bytes result sent to driver
+15/09/01 18:17:11 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 33611
+15/09/01 18:17:11 INFO executor.Executor: Running task 35246.0 in stage 0.0 (TID 33611)
+15/09/01 18:17:11 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00057547.JPEG:0+93152,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00057731.JPEG:0+139970
+15/09/01 18:17:11 INFO executor.Executor: Finished task 35246.0 in stage 0.0 (TID 33611). 1835 bytes result sent to driver
+15/09/01 18:17:12 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 34183
+15/09/01 18:17:12 INFO executor.Executor: Running task 35834.0 in stage 0.0 (TID 34183)
+15/09/01 18:17:12 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00058517.JPEG:0+88073,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00058539.JPEG:0+109544
+15/09/01 18:17:12 INFO executor.Executor: Finished task 35834.0 in stage 0.0 (TID 34183). 1835 bytes result sent to driver
+15/09/01 18:17:12 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 34836
+15/09/01 18:17:12 INFO executor.Executor: Running task 36478.0 in stage 0.0 (TID 34836)
+15/09/01 18:17:12 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00059549.JPEG:0+17191,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00059557.JPEG:0+110724,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00059568.JPEG:0+95545
+15/09/01 18:17:12 INFO executor.Executor: Finished task 36478.0 in stage 0.0 (TID 34836). 1835 bytes result sent to driver
+15/09/01 18:17:13 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 35394
+15/09/01 18:17:13 INFO executor.Executor: Running task 37066.0 in stage 0.0 (TID 35394)
+15/09/01 18:17:13 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00060535.JPEG:0+92202,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00060553.JPEG:0+131131
+15/09/01 18:17:13 INFO executor.Executor: Finished task 37066.0 in stage 0.0 (TID 35394). 1835 bytes result sent to driver
+15/09/01 18:17:13 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 35943
+15/09/01 18:17:13 INFO executor.Executor: Running task 37626.0 in stage 0.0 (TID 35943)
+15/09/01 18:17:13 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00061441.JPEG:0+145090
+15/09/01 18:17:13 INFO executor.Executor: Finished task 37626.0 in stage 0.0 (TID 35943). 1835 bytes result sent to driver
+15/09/01 18:17:14 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 36502
+15/09/01 18:17:14 INFO executor.Executor: Running task 38214.0 in stage 0.0 (TID 36502)
+15/09/01 18:17:14 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00062385.JPEG:0+100955,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00062404.JPEG:0+157142
+15/09/01 18:17:14 INFO executor.Executor: Finished task 38214.0 in stage 0.0 (TID 36502). 1835 bytes result sent to driver
+15/09/01 18:17:14 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 37071
+15/09/01 18:17:14 INFO executor.Executor: Running task 38774.0 in stage 0.0 (TID 37071)
+15/09/01 18:17:14 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00063331.JPEG:0+121488,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00063362.JPEG:0+173881
+15/09/01 18:17:14 INFO executor.Executor: Finished task 38774.0 in stage 0.0 (TID 37071). 1835 bytes result sent to driver
+15/09/01 18:17:14 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 37631
+15/09/01 18:17:14 INFO executor.Executor: Running task 39362.0 in stage 0.0 (TID 37631)
+15/09/01 18:17:14 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00064248.JPEG:0+194800
+15/09/01 18:17:14 INFO executor.Executor: Finished task 39362.0 in stage 0.0 (TID 37631). 1835 bytes result sent to driver
+15/09/01 18:17:15 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 38184
+15/09/01 18:17:15 INFO executor.Executor: Running task 39950.0 in stage 0.0 (TID 38184)
+15/09/01 18:17:15 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00065222.JPEG:0+155089
+15/09/01 18:17:15 INFO executor.Executor: Finished task 39950.0 in stage 0.0 (TID 38184). 1835 bytes result sent to driver
+15/09/01 18:17:16 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 38746
+15/09/01 18:17:16 INFO executor.Executor: Running task 40538.0 in stage 0.0 (TID 38746)
+15/09/01 18:17:16 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00066206.JPEG:0+96597,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00066209.JPEG:0+86229
+15/09/01 18:17:16 INFO executor.Executor: Finished task 40538.0 in stage 0.0 (TID 38746). 1835 bytes result sent to driver
+15/09/01 18:17:16 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 39311
+15/09/01 18:17:16 INFO executor.Executor: Running task 41098.0 in stage 0.0 (TID 39311)
+15/09/01 18:17:16 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00067065.JPEG:0+148914
+15/09/01 18:17:16 INFO executor.Executor: Finished task 41098.0 in stage 0.0 (TID 39311). 1835 bytes result sent to driver
+15/09/01 18:17:16 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 39864
+15/09/01 18:17:16 INFO executor.Executor: Running task 41658.0 in stage 0.0 (TID 39864)
+15/09/01 18:17:16 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00068018.JPEG:0+148543
+15/09/01 18:17:16 INFO executor.Executor: Finished task 41658.0 in stage 0.0 (TID 39864). 1835 bytes result sent to driver
+15/09/01 18:17:17 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 40417
+15/09/01 18:17:17 INFO executor.Executor: Running task 42246.0 in stage 0.0 (TID 40417)
+15/09/01 18:17:17 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00069021.JPEG:0+100237,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00069032.JPEG:0+136873
+15/09/01 18:17:17 INFO executor.Executor: Finished task 42246.0 in stage 0.0 (TID 40417). 1835 bytes result sent to driver
+15/09/01 18:17:18 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 40989
+15/09/01 18:17:18 INFO executor.Executor: Running task 42834.0 in stage 0.0 (TID 40989)
+15/09/01 18:17:18 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00069937.JPEG:0+130057,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00069950.JPEG:0+112355
+15/09/01 18:17:18 INFO executor.Executor: Finished task 42834.0 in stage 0.0 (TID 40989). 1835 bytes result sent to driver
+15/09/01 18:17:18 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 41546
+15/09/01 18:17:18 INFO executor.Executor: Running task 43422.0 in stage 0.0 (TID 41546)
+15/09/01 18:17:18 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00070939.JPEG:0+257258
+15/09/01 18:17:18 INFO executor.Executor: Finished task 43422.0 in stage 0.0 (TID 41546). 1835 bytes result sent to driver
+15/09/01 18:17:18 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 42113
+15/09/01 18:17:18 INFO executor.Executor: Running task 44010.0 in stage 0.0 (TID 42113)
+15/09/01 18:17:18 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00071873.JPEG:0+180290
+15/09/01 18:17:18 INFO executor.Executor: Finished task 44010.0 in stage 0.0 (TID 42113). 1835 bytes result sent to driver
+15/09/01 18:17:19 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 42689
+15/09/01 18:17:19 INFO executor.Executor: Running task 44598.0 in stage 0.0 (TID 42689)
+15/09/01 18:17:19 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00072813.JPEG:0+130892,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00072822.JPEG:0+207027
+15/09/01 18:17:19 INFO executor.Executor: Finished task 44598.0 in stage 0.0 (TID 42689). 1835 bytes result sent to driver
+15/09/01 18:17:19 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 43270
+15/09/01 18:17:19 INFO executor.Executor: Running task 45186.0 in stage 0.0 (TID 43270)
+15/09/01 18:17:19 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00073750.JPEG:0+187354
+15/09/01 18:17:19 INFO executor.Executor: Finished task 45186.0 in stage 0.0 (TID 43270). 1835 bytes result sent to driver
+15/09/01 18:17:20 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 43829
+15/09/01 18:17:20 INFO executor.Executor: Running task 45774.0 in stage 0.0 (TID 43829)
+15/09/01 18:17:20 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00074712.JPEG:0+140507
+15/09/01 18:17:20 INFO executor.Executor: Finished task 45774.0 in stage 0.0 (TID 43829). 1835 bytes result sent to driver
+15/09/01 18:17:20 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 44383
+15/09/01 18:17:20 INFO executor.Executor: Running task 46362.0 in stage 0.0 (TID 44383)
+15/09/01 18:17:20 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00075671.JPEG:0+102266,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00075684.JPEG:0+98404
+15/09/01 18:17:20 INFO executor.Executor: Finished task 46362.0 in stage 0.0 (TID 44383). 1835 bytes result sent to driver
+15/09/01 18:17:21 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 44953
+15/09/01 18:17:21 INFO executor.Executor: Running task 46950.0 in stage 0.0 (TID 44953)
+15/09/01 18:17:21 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00076646.JPEG:0+151795
+15/09/01 18:17:21 INFO executor.Executor: Finished task 46950.0 in stage 0.0 (TID 44953). 1835 bytes result sent to driver
+15/09/01 18:17:21 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 45504
+15/09/01 18:17:21 INFO executor.Executor: Running task 47510.0 in stage 0.0 (TID 45504)
+15/09/01 18:17:21 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00077538.JPEG:0+133013,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00077542.JPEG:0+117554
+15/09/01 18:17:21 INFO executor.Executor: Finished task 47510.0 in stage 0.0 (TID 45504). 1835 bytes result sent to driver
+15/09/01 18:17:22 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 46071
+15/09/01 18:17:22 INFO executor.Executor: Running task 48098.0 in stage 0.0 (TID 46071)
+15/09/01 18:17:22 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00078510.JPEG:0+174942
+15/09/01 18:17:22 INFO executor.Executor: Finished task 48098.0 in stage 0.0 (TID 46071). 1835 bytes result sent to driver
+15/09/01 18:17:22 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 46620
+15/09/01 18:17:22 INFO executor.Executor: Running task 48686.0 in stage 0.0 (TID 46620)
+15/09/01 18:17:22 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00079493.JPEG:0+193149
+15/09/01 18:17:22 INFO executor.Executor: Finished task 48686.0 in stage 0.0 (TID 46620). 1835 bytes result sent to driver
+15/09/01 18:17:23 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 47162
+15/09/01 18:17:23 INFO executor.Executor: Running task 49274.0 in stage 0.0 (TID 47162)
+15/09/01 18:17:23 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00080441.JPEG:0+155402
+15/09/01 18:17:23 INFO executor.Executor: Finished task 49274.0 in stage 0.0 (TID 47162). 1835 bytes result sent to driver
+15/09/01 18:17:23 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 47714
+15/09/01 18:17:23 INFO executor.Executor: Running task 49862.0 in stage 0.0 (TID 47714)
+15/09/01 18:17:23 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00081403.JPEG:0+88771,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00081419.JPEG:0+153578
+15/09/01 18:17:23 INFO executor.Executor: Finished task 49862.0 in stage 0.0 (TID 47714). 1835 bytes result sent to driver
+15/09/01 18:17:24 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 48276
+15/09/01 18:17:24 INFO executor.Executor: Running task 50450.0 in stage 0.0 (TID 48276)
+15/09/01 18:17:24 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00082359.JPEG:0+27479,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00082389.JPEG:0+31926,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00082396.JPEG:0+61931,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00082414.JPEG:0+178035
+15/09/01 18:17:24 INFO executor.Executor: Finished task 50450.0 in stage 0.0 (TID 48276). 1835 bytes result sent to driver
+15/09/01 18:17:24 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 48856
+15/09/01 18:17:24 INFO executor.Executor: Running task 51038.0 in stage 0.0 (TID 48856)
+15/09/01 18:17:24 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00083326.JPEG:0+87038,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00083367.JPEG:0+145263
+15/09/01 18:17:24 INFO executor.Executor: Finished task 51038.0 in stage 0.0 (TID 48856). 1835 bytes result sent to driver
+15/09/01 18:17:25 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 49417
+15/09/01 18:17:25 INFO executor.Executor: Running task 51626.0 in stage 0.0 (TID 49417)
+15/09/01 18:17:25 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00084320.JPEG:0+67540,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00084331.JPEG:0+357551
+15/09/01 18:17:25 INFO executor.Executor: Finished task 51626.0 in stage 0.0 (TID 49417). 1835 bytes result sent to driver
+15/09/01 18:17:25 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 49972
+15/09/01 18:17:25 INFO executor.Executor: Running task 52186.0 in stage 0.0 (TID 49972)
+15/09/01 18:17:25 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00085230.JPEG:0+124946,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00085251.JPEG:0+215692
+15/09/01 18:17:25 INFO executor.Executor: Finished task 52186.0 in stage 0.0 (TID 49972). 1835 bytes result sent to driver
+15/09/01 18:17:25 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 50538
+15/09/01 18:17:25 INFO executor.Executor: Running task 52774.0 in stage 0.0 (TID 50538)
+15/09/01 18:17:25 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00086224.JPEG:0+69736,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00086226.JPEG:0+112079
+15/09/01 18:17:25 INFO executor.Executor: Finished task 52774.0 in stage 0.0 (TID 50538). 1835 bytes result sent to driver
+15/09/01 18:17:26 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 51091
+15/09/01 18:17:26 INFO executor.Executor: Running task 53362.0 in stage 0.0 (TID 51091)
+15/09/01 18:17:26 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00087138.JPEG:0+115692,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00087148.JPEG:0+151200
+15/09/01 18:17:26 INFO executor.Executor: Finished task 53362.0 in stage 0.0 (TID 51091). 1835 bytes result sent to driver
+15/09/01 18:17:26 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 51652
+15/09/01 18:17:26 INFO executor.Executor: Running task 53950.0 in stage 0.0 (TID 51652)
+15/09/01 18:17:26 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00088101.JPEG:0+153007
+15/09/01 18:17:26 INFO executor.Executor: Finished task 53950.0 in stage 0.0 (TID 51652). 1835 bytes result sent to driver
+15/09/01 18:17:27 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 52208
+15/09/01 18:17:27 INFO executor.Executor: Running task 54538.0 in stage 0.0 (TID 52208)
+15/09/01 18:17:27 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00089038.JPEG:0+34383,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00089060.JPEG:0+58841,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00089066.JPEG:0+196880
+15/09/01 18:17:27 INFO executor.Executor: Finished task 54538.0 in stage 0.0 (TID 52208). 1835 bytes result sent to driver
+15/09/01 18:17:27 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 52783
+15/09/01 18:17:27 INFO executor.Executor: Running task 55126.0 in stage 0.0 (TID 52783)
+15/09/01 18:17:27 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00089970.JPEG:0+119367,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00089979.JPEG:0+212306
+15/09/01 18:17:27 INFO executor.Executor: Finished task 55126.0 in stage 0.0 (TID 52783). 1835 bytes result sent to driver
+15/09/01 18:17:28 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 53342
+15/09/01 18:17:28 INFO executor.Executor: Running task 55714.0 in stage 0.0 (TID 53342)
+15/09/01 18:17:28 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00090959.JPEG:0+99755,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00090962.JPEG:0+101464
+15/09/01 18:17:28 INFO executor.Executor: Finished task 55714.0 in stage 0.0 (TID 53342). 1835 bytes result sent to driver
+15/09/01 18:17:28 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 53896
+15/09/01 18:17:28 INFO executor.Executor: Running task 56302.0 in stage 0.0 (TID 53896)
+15/09/01 18:17:28 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00091917.JPEG:0+96059,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00091930.JPEG:0+111944
+15/09/01 18:17:28 INFO executor.Executor: Finished task 56302.0 in stage 0.0 (TID 53896). 1835 bytes result sent to driver
+15/09/01 18:17:29 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 54457
+15/09/01 18:17:29 INFO executor.Executor: Running task 56862.0 in stage 0.0 (TID 54457)
+15/09/01 18:17:29 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00092856.JPEG:0+212961
+15/09/01 18:17:29 INFO executor.Executor: Finished task 56862.0 in stage 0.0 (TID 54457). 1835 bytes result sent to driver
+15/09/01 18:17:29 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 55000
+15/09/01 18:17:29 INFO executor.Executor: Running task 57450.0 in stage 0.0 (TID 55000)
+15/09/01 18:17:29 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00093827.JPEG:0+159566
+15/09/01 18:17:29 INFO executor.Executor: Finished task 57450.0 in stage 0.0 (TID 55000). 1835 bytes result sent to driver
+15/09/01 18:17:29 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 55493
+15/09/01 18:17:29 INFO executor.Executor: Running task 58038.0 in stage 0.0 (TID 55493)
+15/09/01 18:17:29 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00094766.JPEG:0+131525,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00094768.JPEG:0+153455
+15/09/01 18:17:29 INFO executor.Executor: Finished task 58038.0 in stage 0.0 (TID 55493). 1835 bytes result sent to driver
+15/09/01 18:17:30 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 55968
+15/09/01 18:17:30 INFO executor.Executor: Running task 58626.0 in stage 0.0 (TID 55968)
+15/09/01 18:17:30 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00095722.JPEG:0+147427
+15/09/01 18:17:30 INFO executor.Executor: Finished task 58626.0 in stage 0.0 (TID 55968). 1835 bytes result sent to driver
+15/09/01 18:17:30 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 56422
+15/09/01 18:17:30 INFO executor.Executor: Running task 59158.0 in stage 0.0 (TID 56422)
+15/09/01 18:17:30 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00096606.JPEG:0+133820,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00096615.JPEG:0+180395
+15/09/01 18:17:30 INFO executor.Executor: Finished task 59158.0 in stage 0.0 (TID 56422). 1835 bytes result sent to driver
+15/09/01 18:17:31 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 56892
+15/09/01 18:17:31 INFO executor.Executor: Running task 59718.0 in stage 0.0 (TID 56892)
+15/09/01 18:17:31 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00097536.JPEG:0+99384,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00097547.JPEG:0+14182,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00097566.JPEG:0+44235
+15/09/01 18:17:31 INFO executor.Executor: Finished task 59718.0 in stage 0.0 (TID 56892). 1835 bytes result sent to driver
+15/09/01 18:17:31 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 57360
+15/09/01 18:17:31 INFO executor.Executor: Running task 60306.0 in stage 0.0 (TID 57360)
+15/09/01 18:17:31 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00098466.JPEG:0+64316,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00098479.JPEG:0+117950
+15/09/01 18:17:31 INFO executor.Executor: Finished task 60306.0 in stage 0.0 (TID 57360). 1835 bytes result sent to driver
+15/09/01 18:17:31 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 57672
+15/09/01 18:17:31 INFO executor.Executor: Running task 60894.0 in stage 0.0 (TID 57672)
+15/09/01 18:17:31 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00099404.JPEG:0+212623
+15/09/01 18:17:31 INFO executor.Executor: Finished task 60894.0 in stage 0.0 (TID 57672). 1835 bytes result sent to driver
+15/09/01 18:17:37 INFO executor.CoarseGrainedExecutorBackend: Got assigned task 59309
+15/09/01 18:17:37 INFO executor.Executor: Running task 7084.0 in stage 0.0 (TID 59309)
+15/09/01 18:17:37 INFO rdd.BinaryFileRDD: Input split: Paths:/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00011612.JPEG:0+59528,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00011639.JPEG:0+41278,/yxsu/dataset/ImageNet/ILSVRC2012_img_test/ILSVRC2012_test_00011644.JPEG:0+151313
+15/09/01 18:17:37 INFO executor.Executor: Finished task 7084.0 in stage 0.0 (TID 59309). 1835 bytes result sent to driver
+15/09/01 18:19:50 ERROR executor.CoarseGrainedExecutorBackend: Driver 10.10.18.32:65488 disassociated! Shutting down.
+15/09/01 18:19:50 INFO storage.DiskBlockManager: Shutdown hook called
+15/09/01 18:19:50 INFO util.Utils: Shutdown hook called

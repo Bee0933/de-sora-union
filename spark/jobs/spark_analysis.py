@@ -7,51 +7,53 @@ from pyspark.sql.functions import (
     input_file_name,
     regexp_extract,
     lit,
+    when,
     monotonically_increasing_id,
     to_timestamp,
 )
+# start spark session
+spark = SparkSession.builder.appName("SparkLogDataAnalysis(coalesce8)").getOrCreate()
 
-spark = SparkSession.builder.appName("SparkLogDataAnalysis").getOrCreate()
+# optimize execution: 
+# - dynamically adjust query execution plan based on data on runtime
+# - Setting shuffle partitions to 16 to help balance the workload
+spark.conf.set("spark.sql.adaptive.enabled", "true")
+spark.conf.set("spark.sql.shuffle.partitions", "16") 
+
 
 base_dir = "data/"
-
-# Read all log files recursively
 log_df = spark.read.text(f"{base_dir}/**/*.log")
 
-log_df = log_df.withColumn("file_path", input_file_name())
-
-# raw log file format
+# define regular expression pattern to parse the raw logs data
 pattern = r"(\d{2}/\d{2}/\d{2})\s(\d{2}:\d{2}:\d{2})\s([A-Z]+)\s([^\s]+)\s(.*)"
 
-# Extract fields using the regular expression
+# extract relevant fields using regular expressions and transformations
+# Transformations:
+# - Drop the original 'value' column after extracting necessary fields
+# - Remove rows where Date is missing or empty
+# - Fill missing Date or Time with default values
+# - Combine Date and Time and convert to timestamp
+# - Extract the hour from the timestamp for aggregation
 parsed_df = (
     log_df.withColumn("Date", regexp_extract("value", pattern, 1))
     .withColumn("Time", regexp_extract("value", pattern, 2))
     .withColumn("Level", regexp_extract("value", pattern, 3))
     .withColumn("Component", regexp_extract("value", pattern, 4))
     .withColumn("Content", regexp_extract("value", pattern, 5))
-    .withColumn("EventId", lit("E22"))
-    .withColumn("EventTemplate", lit("Registered signal handlers for [*]"))
-    .withColumn("LineId", monotonically_increasing_id())
-    .drop("value")
+    .drop("value") #
+    .filter(col("Date") != "")
+    .fillna({"Date": "00/00/00", "Time": "00:00:00"})
+    .withColumn("Timestamp", to_timestamp(concat_ws(" ", col("Date"), col("Time")), "yy/MM/dd HH:mm:ss"))
+    .withColumn("Hour", hour(col("Timestamp")))
 )
 
-# remove records where date is missing
-parsed_df = parsed_df.filter(parsed_df.Date != "")
+# Coalesce reduces the number of partitions for aggregation efficiency
+parsed_df = parsed_df.coalesce(8) 
 
-parsed_df = parsed_df.fillna({"Date": "00/00/00", "Time": "00:00:00"})
-
-# transform date column to timestamps and Extract hour field from the timestamp
-parsed_df = parsed_df.withColumn(
-    "Timestamp",
-    to_timestamp(concat_ws(" ", col("Date"), col("Time")), "yy/MM/dd HH:mm:ss"),
-)
-parsed_df = parsed_df.withColumn("Hour", hour(col("Timestamp")))
-
-parsed_df = parsed_df.coalesce(8)
-
-# Aggregate the logs by Component and Hour
+# Perform aggregation by Component and Hour, counting the number of logs per combination
 aggregated_df = parsed_df.groupBy("Component", "Hour").agg(count("*").alias("LogCount"))
 
 aggregated_df.show(truncate=False)
+
+
 spark.stop()
