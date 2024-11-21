@@ -1,6 +1,6 @@
 # Sora Union Data Engineer Task
 
-This repo provide a set of preconfigured tools that was used for the Data Enginneer recruitment task:
+This repo provides a set of preconfigured tools that was used for the Data Engineer recruitment task:
 
 - Apache Airflow
 - Apache Spark
@@ -55,6 +55,13 @@ Other tools required
 > The design wasn’t implemented manually; instead, it was done using an automated tool called DBT. DBT is commonly used for data transformations in ELT processes and for building and maintaining data models in both ETL and ELT workflows.
 
 - The dbt models are located in the [dbt_project/models](dbt_project/models) folder, which includes all the model definitions for the fact and dimension tables.
+
+- materilaization used for models
+    src_ data (ephrmeral materialization) --> dim & fact data  (table materilazation) <br>
+
+    The ephemeral materialization is used for temporary, intermediate transformations that don't need to be stored permanently, helping to keep the pipeline lightweight and efficient. <br>
+
+    The table materialization is used for final models that need to be stored persistently in the data warehouse for analysis and reporting <br>
 
 - #### ETL process:
     <!-- <div style="text-align: center;">
