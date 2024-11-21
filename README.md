@@ -81,7 +81,7 @@ Optional tools required
 - ####  Data Integrity and cleanliness:
     To ensure data intergrity and cleanliness I used: 
 
-    -  DBT to enforce data quality during the transformation process by applying generic tests [here](dbt_project/models/schema.yaml), to ensure critical columns meet specified rules like: 
+    -  DBT to enforce data quality by applying generic tests [here](dbt_project/models/schema.yaml), to ensure critical columns meet specified rules like: 
         - `Not Null Tests` on `date, client, project, name` columns
         - `Accepted Values Tests`: Ensure boolean fields like `billable` only contain true or false
         - `Consistency Rules`: Validate logical constraints, such as: `start_date` ≤ `end_date` <br>
