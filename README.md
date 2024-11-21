@@ -19,7 +19,7 @@ Other tools required
 
 ###  1. Data Warehousing & ETL Process
 - #### Data warehouse design:
-    The schema was designed as a star schema to optimize both analytical queries and operational requirements. The design involved creating `fact` and `dimension` tables from the `Float` and `ClickUp` data, which include the following:
+    <!-- The schema was designed as a star schema to optimize both analytical queries and operational requirements. The design involved creating `fact` and `dimension` tables from the `Float` and `ClickUp` data, which include the following:
     - `fact_project_activity`; which corresponds to individual activities related to a project
     - `dim_client`; contains client-specific information
     - `dim_project`; contains details about projects
@@ -49,7 +49,7 @@ Other tools required
     *Time-Based Analysis*: The `dim_date` is a generated dimension that supports temporal analysis like tracking hours worked or monthly trends. <br>
     *Role-Based Analysis*: The `dim_role` and `dim_team_member` tables enable analysis by roles and team member contributions. <br>
     *Task and Project Hierarchies*: The `dim_task` and `dim_project` tables allow both granular task-level and high-level project analysis. <br>
-    *Client Association*: The `dim_client` table facilitates efficient client-related queries, such as billable hours by client.
+    *Client Association*: The `dim_client` table facilitates efficient client-related queries, such as billable hours by client. -->
 
 >  🚨 Note! :
 > The design wasn’t implemented manually; instead, it was done using an automated tool called DBT. DBT is commonly used for data transformations in ELT processes and for building and maintaining data models in both ETL and ELT workflows.
