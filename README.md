@@ -6,7 +6,10 @@ This repo provide a set of preconfigured tools that was used for the Data Enginn
 - Apache Spark
 - PostgreSQL DB
 - DBT
+
+Other tools required
 - Docker & Docker compose
+- DBeaver (*or any DB management tool of choice*)
 - Cloud Server *(Digital Ocean was used for a part of the task)*
 
 ## Usage
