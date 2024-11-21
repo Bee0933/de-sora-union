@@ -12,7 +12,7 @@ Other tools required
 - DBeaver (*or any DB management tool of choice*)
 - Cloud Server *(Digital Ocean was used for a part of the task)*
 
-#### Wirtten docs found [here](https://docs.google.com/document/d/1zXne7qrxWh82c2MWyXX9jwbZLZzW8065SteJIvwY9Lc/edit?usp=sharing) 
+<!-- #### Wirtten docs found [here](https://docs.google.com/document/d/1zXne7qrxWh82c2MWyXX9jwbZLZzW8065SteJIvwY9Lc/edit?usp=sharing)  -->
 
 ## Usage
 - Use the `make` configurations provided [here](Makefile) to deploy the containers and start the services. 
