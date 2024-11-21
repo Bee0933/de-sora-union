@@ -146,11 +146,11 @@ Optional tools required
             <img src="static/spark-cluster-shot.png" alt="ELT Architecture" width="600"/> <br>
 
 ###  4. Data Modeling Techniques
-- ## Data Model Diagrams 
+- #### Data Model Diagrams 
     <img src="static/dim-model.png" alt="ELT Architecture" width="600"/> <br>
 
     <img src="static/erd.png" alt="ELT Architecture" width="600"/> <br>
 
-- ## Design Decisions
+- #### Design Decisions
     [Find document Bookmark here](https://docs.google.com/document/d/1zXne7qrxWh82c2MWyXX9jwbZLZzW8065SteJIvwY9Lc/edit?tab=t.0#bookmark=id.qw4cqseke0xr)
    
