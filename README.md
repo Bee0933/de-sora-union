@@ -146,30 +146,5 @@ Other tools required
     <img src="static/erd.png" alt="ELT Architecture" width="600"/> <br>
 
 - ## Design Decisions
-    - **Analytical Purpose**
-        The data warehouse schema was designed using a star schema to optimize performance for analytical queries while maintaining simplicity. This approach centers around a fact table and related dimension tables to allow for efficient aggregation and detailed reporting.
-
-        1) The central fact table, fact_project_activity, holds measurable data (e.g., hours worked, billable amounts) and links to dimension tables for descriptive context, such as client, project, role, task, team member, and date.
-
-        2) Fact Table Design: The fact_project_activity table tracks project-related activities with foreign keys referencing dimensions like project, client, role, and time. Metrics such as Hours and Billable facilitate detailed analysis.
-
-        3) The dimension tables include dim_client, which stores client data for related queries; dim_project, providing project details with start and end dates; dim_role, categorizing data by roles for performance analysis; dim_task, enabling task-level tracking; dim_team_member, which tracks team members and their roles; and dim_date, supporting temporal analysis with attributes like year, month, and quarter.
-
-        4) The dim_date enables time-based analysis (e.g., monthly trends), while dim_role and dim_team_member support role- and team-level performance tracking.
-
-        5) Client-Centric Reporting: The dim_client dimension facilitates client-specific analysis, such as tracking billable hours or evaluating performance by client.
-
-    - **Operational Use:**
-        The schema follows a normalized relational design optimized for managing and analyzing project-related activities.
-
-        1) Each entity (e.g., Client, Project, Task, Employee, Time Entry) is represented by a separate table to ensure data consistency, prevent redundancy, and maintain referential integrity through foreign key relationships. These relationships enforce data integrity across the schema.
-
-        2) Entity Definitions as `CLIENT`, `PROJECT`, `TASK`, `EMPLOYEE`, and `TIME_ENTRY` store essential data about clients, projects, tasks, employees, and time logs.
-
-        3) This design supports project-level, task-level, and employee productivity analysis for reports on billable hours and other metrics.
-
-        4) Primary keys adopted ensure unique records, while foreign keys maintain relationships between tables for data consistency.
-
-        5) The design is scalable as it supports easy growth as more clients, projects, and logs can be added without impacting the overall structure.
-
+    [Find document Bookmark here](https://docs.google.com/document/d/1zXne7qrxWh82c2MWyXX9jwbZLZzW8065SteJIvwY9Lc/edit?tab=t.0#bookmark=id.qw4cqseke0xr)
    
