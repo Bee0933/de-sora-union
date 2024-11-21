@@ -104,24 +104,26 @@ Optional tools required
     **usage:** <br>
     setup spark containers: 
     - `make up-spark` to spin up the spark containers 
-    - download and extract the logs dataset into the `spark/data` folder <br>
-        the extracted file should contain `915` folders with `.log` files within the folders with a total of `3852`  files 
+    - download and extract the logs dataset into the `spark/data` folder. <br>
 
-        - **how to:** <br>
+        The extracted file should contain `915` folders with `.log` files within the folders with a total of `3852`  files 
+
+        - **how to download and extract the data:** <br>
           ```bash
             wget "https://zenodo.org/records/8196385/files/Spark.tar.gz?download=1" -O Spark.tar.gz
 
             tar -xzvf Spark.tar.gz
           ```
 
-    <img src="static/spark-logs-folder-files-shot-2.png" alt="ELT Architecture" width="600"/> <br>
+        <img src="static/spark-logs-folder-files-shot-2.png" alt="ELT Architecture" width="600"/> <br>
 
-    - submit the spark job to process the files and aggregate the logs data with `spark-job`. This will submit spark job to spark cluster via the master url. The spark code is written to dynamically read all the log files in all the sub folders and parse the 33 mllion worth of records for processing.
+    - submit the spark job to process the files and aggregate the logs data with `make spark-job`. This will submit spark job to spark cluster via the master url. The spark code is written to dynamically read all the log files in all the sub folders and parse the 33 mllion worth of records for processing.
 
-    <img src="static/spark-records-processed.png" alt="ELT Architecture" width="600"/> <br>
+        <img src="static/spark-records-processed.png" alt="ELT Architecture" width="600"/> <br>
 
     >  🚨 Note! :
     > The setup was tested on a cloud server, which is recommended over running it on a local machine. This was done using a DigitalOcean Droplet with the following specs: `8 GB Memory / 2 AMD vCPUs / 100 GB Disk / FRA1 - Ubuntu 24.10 x64` <br>
+
 
     The result of the aggregation is shown here: <br>
 
@@ -137,7 +139,11 @@ Optional tools required
     - **Performance Considerations:**
         - Adaptive Query Execution: Spark’s adaptive query execution was enabled to optimize the execution plan at runtime
         - Shuffle Partitions: The `shuffle partitions` were set to `16` to balance the workload and improve parallelism.
-        - Coalescing: The number of partitions was reduced to `8` using `coalesce` to optimize performance during aggregation, minimizing the overhead of excessive partitions
+        - Coalescing: The number of partitions was reduced to `8` using `coalesce` to optimize performance during aggregation, minimizing the overhead of excessive partitions <br>
+
+            - I was able to run the query to process the `33 million` records within `2.9mins`
+
+            <img src="static/spark-cluster-shot.png" alt="ELT Architecture" width="600"/> <br>
 
 ###  4. Data Modeling Techniques
 - ## Data Model Diagrams 
